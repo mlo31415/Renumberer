@@ -24,7 +24,7 @@ pattern=re.compile("^([\w\W]*)p([0-9]*)\.jpg$") # Regex pattern to match page na
 for name in filelist:
     g=pattern.match(name).groups()
     if g == None:
-        print("Jpeg with non-standar name. Ignored: '"+name+"'")
+        print("Jpeg with non-standard name. Ignored: '"+name+"'")
         continue
     if int(g[1]) == 0:  # 1 is a special case which we can skip since it's already right
         continue
