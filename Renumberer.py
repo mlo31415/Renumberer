@@ -26,7 +26,7 @@ for name in filelist:
     if g == None:
         print("Jpeg with non-standard name. Ignored: '"+name+"'")
         continue
-    if int(g[1]) == 0:  # 1 is a special case which we can skip since it's already right
+    if int(g[1]) == 1:  # 1 is a special case which we can skip since it's already right
         continue
     seq=2*(int(g[1])-1)
     seqstr=str(seq).rjust(2, '0')
